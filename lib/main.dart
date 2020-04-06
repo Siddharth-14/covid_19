@@ -20,7 +20,7 @@ class HomePageState extends State<HomePage> {
 
   Future<String> getData() async {
     var response = await http.get(
-        Uri.encodeFull("https://api.rootnet.in/covid19-in/stats/latest"),
+        Uri.encodeFull("https://api.covid19api.com/countries"),
         headers: {
           "Accept": "application/json"
         }
@@ -29,7 +29,6 @@ class HomePageState extends State<HomePage> {
     this.setState(() {
       data = json.decode(response.body);
     });
-    print(data[1]["summary"]);
 
     return "Success!";
   }
@@ -47,7 +46,7 @@ class HomePageState extends State<HomePage> {
         itemCount: data == null ? 0 : data.length,
         itemBuilder: (BuildContext context, int index) {
           return new Card(
-            child: new Text(data[index]["data"]),
+            child: new Text(data[index]["Country"]),
           );
         },
       ),
