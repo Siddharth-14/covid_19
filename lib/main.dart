@@ -20,14 +20,15 @@ class HomePageState extends State<HomePage> {
 
   Future<String> getData() async {
     var response = await http.get(
-        Uri.encodeFull("https://api.covid19api.com/countries"),
+        Uri.encodeFull("https://api.covid19api.com/summary"),
         headers: {
           "Accept": "application/json"
         }
     );
 
     this.setState(() {
-      data = json.decode(response.body);
+      var con = json.decode(response.body);
+      data = con["Countries"];
     });
 
     return "Success!";
@@ -44,9 +45,56 @@ class HomePageState extends State<HomePage> {
     return new Scaffold(
       body: new ListView.builder(
         itemCount: data == null ? 0 : data.length,
-        itemBuilder: (BuildContext context, int index) {
-          return new Card(
-            child: new Text(data[index]["Country"]),
+        itemBuilder: (context, position) {
+          return Column(
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Padding(
+                        padding:
+                        const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 6.0),
+                        child: Text(
+                          data[position]["Country"],
+                          style: TextStyle(
+                              fontSize: 22.0, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                        const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 12.0),
+                        child: Text(
+                          data[position]["TotalDeaths"].toString(),
+                          style: TextStyle(fontSize: 18.0),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Text(
+                          "5m",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              Divider(
+                height: 2.0,
+                color: Colors.grey,
+              )
+            ],
           );
         },
       ),
