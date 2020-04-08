@@ -6,8 +6,8 @@ import 'dart:async';
 import 'dart:convert';
 
 class HomePageState extends State<HomePage> {
-  List data;
-  List brief;
+  List<dynamic> data;
+  Map<String, dynamic> brief;
 
   Future<String> getData() async {
     var response = await http.get(
@@ -15,27 +15,10 @@ class HomePageState extends State<HomePage> {
         headers: {"Accept": "application/json"});
 
     this.setState(() {
-      var con = json.decode(response.body);
+      Map<String, dynamic> con = json.decode(response.body);
       data = con["Countries"];
-    });
-
-    print(brief);
-
-    return "Success!";
-  }
-
-  Future<String> getBrief() async {
-    var response = await http.get(
-        Uri.encodeFull("https://api.covid19api.com/summary"),
-        headers: {"Accept": "application/json"});
-
-    this.setState(() {
-      var con = json.decode(response.body);
       brief = con["Global"];
     });
-
-    print(brief);
-
     return "Success!";
   }
 
@@ -43,7 +26,6 @@ class HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     this.getData();
-    this.getBrief();
   }
 
   @override
@@ -75,7 +57,7 @@ class HomePageState extends State<HomePage> {
                                   padding: const EdgeInsets.fromLTRB(
                                       12.0, 12.0, 12.0, 6.0),
                                   child: Text(
-                                    brief[position]["TotalConfirmed"].toString(),
+                                    brief["TotalConfirmed"].toString(),
                                     style: TextStyle(
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.bold),
@@ -85,7 +67,7 @@ class HomePageState extends State<HomePage> {
                                   padding: const EdgeInsets.fromLTRB(
                                       12.0, 6.0, 12.0, 12.0),
                                   child: Text(
-                                    data[position]["TotalDeaths"].toString(),
+                                    brief["TotalDeaths"].toString(),
                                     style: TextStyle(fontSize: 18.0),
                                   ),
                                 ),
