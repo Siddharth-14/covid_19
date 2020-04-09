@@ -22,10 +22,12 @@ class HomePage extends StatefulWidget {
             primaryColor: Colors.black,
             primaryIconTheme: IconThemeData(color: Colors.black),
             primaryTextTheme: TextTheme(
-                title: TextStyle(color: Colors.black, fontFamily: "Aveny")),
+            title: TextStyle(color: Colors.black, fontFamily: "Aveny")),
             textTheme: TextTheme(title: TextStyle(color: Colors.black))),
       );
+
 }
     @override
     HomePageState createState() => new HomePageState();
+
 }
