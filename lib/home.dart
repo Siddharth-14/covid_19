@@ -20,6 +20,9 @@ class HomePageState extends State<HomePage> {
       Map<String, dynamic> con = json.decode(response.body);
       data = con["Countries"];
       brief = con["Global"];
+      Comparator<dynamic> comparator = (b, a) =>
+          a["TotalConfirmed"].compareTo(b["TotalConfirmed"]);
+      data.sort(comparator);
     });
     return "Success!";
   }
@@ -46,6 +49,9 @@ class HomePageState extends State<HomePage> {
               fontWeight: FontWeight.bold
           ),
         ),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.search), onPressed: () {}, iconSize: 24,)
+        ],
       ),
       body: Column(children: <Widget>[
           Flexible(
@@ -54,128 +60,178 @@ class HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               child: Row(children: <Widget>[
                 new Container(
-                  child: new Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
-                    elevation: 5,
-                    color: Colors.yellow,
-                    child: Column(
-                      children: <Widget>[
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      6.0, 6.0, 6.0, 3.0),
-                                  child: Text(
-                                    "Total Confirmed: ",
-                                    style: TextStyle(
-                                        fontSize: 22.0,
-                                        fontWeight: FontWeight.bold),
+                  child: Center(
+                    child: SizedBox(
+                      width: 200.0,
+                      height: 110.0,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: new Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)),
+                          elevation: 5,
+                          color: Colors.yellow,
+                          child: Column(
+                            children: <Widget>[
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment
+                                    .spaceBetween,
+                                children: <Widget>[
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment
+                                        .start,
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            0.0, 18.0, 0.0, 8.0),
+                                        child: Align(
+                                          alignment: Alignment.center,
+                                          child: Text(
+                                            brief["TotalConfirmed"].toString(),
+                                            style: TextStyle(
+                                                fontSize: 36.0,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            0.0, 0.0, 0.0, 0.0),
+                                        child: Align(
+                                          alignment: Alignment.bottomRight,
+                                          child: Text(
+                                            "Total Confirmed: ",
+                                            textAlign: TextAlign.left,
+                                            style: TextStyle(
+                                                fontSize: 18.0,
+                                                fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      6.0, 6.0, 6.0, 3.0),
-                                  child: Text(
-                                    brief["TotalConfirmed"].toString(),
-                                    style: TextStyle(
-                                        fontSize: 22.0,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
                 new Container(
-                  child: new Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
-                    elevation: 5,
-                    color: Colors.red,
-                    child: Column(
-                      children: <Widget>[
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      6.0, 6.0, 6.0, 3.0),
-                                  child: Text(
-                                    "Total Deaths: ",
-                                    style: TextStyle(
-                                        fontSize: 22.0,
-                                        fontWeight: FontWeight.bold),
+                  child: Center(
+                    child: SizedBox(
+                      width: 200.0,
+                      height: 110.0,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: new Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)),
+                          elevation: 5,
+                          color: Colors.red,
+                          child: Column(
+                            children: <Widget>[
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment
+                                    .spaceBetween,
+                                children: <Widget>[
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment
+                                        .start,
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            0.0, 18.0, 0.0, 8.0),
+                                        child: Align(
+                                          alignment: Alignment.center,
+                                          child: Text(
+                                            brief["TotalDeaths"].toString(),
+                                            style: TextStyle(
+                                                fontSize: 36.0,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            0.0, 0.0, 0.0, 0.0),
+                                        child: Align(
+                                          alignment: Alignment.bottomRight,
+                                          child: Text(
+                                            "Total Death: ",
+                                            style: TextStyle(
+                                                fontSize: 18.0,
+                                                fontWeight: FontWeight.normal,
+                                                fontFamily: 'Poppins'
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      6.0, 6.0, 6.0, 3.0),
-                                  child: Text(
-                                    brief["TotalDeaths"].toString(),
-                                    style: TextStyle(
-                                        fontSize: 22.0,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
                 new Container(
-                  child: new Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
-                    elevation: 5,
-                    color: Colors.green,
-                    child: Column(
-                      children: <Widget>[
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  child: SizedBox(
+                    width: 200.0,
+                    height: 110.0,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: new Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(5)),
+                        elevation: 5,
+                        color: Colors.green,
+                        child: Column(
                           children: <Widget>[
                             Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      6.0, 6.0, 6.0, 3.0),
-                                  child: Text(
-                                    "Total Recovered: ",
-                                    style: TextStyle(
-                                        fontSize: 22.0,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      6.0, 6.0, 6.0, 3.0),
-                                  child: Text(
-                                    brief["TotalRecovered"].toString(),
-                                    style: TextStyle(
-                                        fontSize: 22.0,
-                                        fontWeight: FontWeight.bold),
-                                  ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          0.0, 18.0, 0.0, 8.0),
+                                      child: Align(
+                                        alignment: Alignment.center,
+                                        child: Text(
+                                          brief["TotalRecovered"].toString(),
+                                          style: TextStyle(
+                                              fontSize: 36.0,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          0.0, 0.0, 0.0, 0.0),
+                                      child: Align(
+                                        alignment: Alignment.bottomRight,
+                                        child: Text(
+                                          "Total Recovered: ",
+                                          style: TextStyle(
+                                              fontSize: 18.0,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
                           ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
@@ -185,8 +241,14 @@ class HomePageState extends State<HomePage> {
           Flexible(
             flex: 8,
             child: Container(
-              child: new ListView.builder(
+              child: new ListView.separated(
+                physics: BouncingScrollPhysics(),
                 scrollDirection: Axis.vertical,
+                separatorBuilder: (BuildContext context, int index) {
+                  return SizedBox(
+                    height: 10,
+                  );
+                },
                 shrinkWrap: true,
                 itemCount: data == null ? 0 : data.length,
                 itemBuilder: (context, position) {
@@ -204,7 +266,7 @@ class HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(
-                                      12.0, 12.0, 12.0, 6.0),
+                                      12.0, 12.0, 12.0, 2.0),
                                   child: Text(
                                     data[position]["Country"],
                                     style: TextStyle(
@@ -219,7 +281,7 @@ class HomePageState extends State<HomePage> {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 6.0, 12.0, 12.0),
+                                            12.0, 6.0, 12.0, 2.0),
                                         child: Text(
                                           "Total Confirmed:",
                                           style: TextStyle(fontSize: 16.0),
@@ -241,7 +303,7 @@ class HomePageState extends State<HomePage> {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 6.0, 12.0, 12.0),
+                                            12.0, 6.0, 12.0, 2.0),
                                         child: Text(
                                           "Total Recovered:",
                                           style: TextStyle(fontSize: 16.0),
@@ -249,7 +311,7 @@ class HomePageState extends State<HomePage> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 6.0, 12.0, 12.0),
+                                            12.0, 6.0, 12.0, 2.0),
                                         child: Text(
                                           data[position]["TotalRecovered"]
                                               .toString(),
@@ -263,7 +325,7 @@ class HomePageState extends State<HomePage> {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 6.0, 12.0, 12.0),
+                                            12.0, 6.0, 12.0, 2.0),
                                         child: Text(
                                           "Total Deaths:",
                                           style: TextStyle(fontSize: 16.0),
