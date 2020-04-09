@@ -1,9 +1,5 @@
-import 'dart:async';
-import 'dart:convert';
-
-import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:covid19/home.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -12,10 +8,10 @@ void main() {
 }
 
 class HomePage extends StatefulWidget {
-    @override
+  @override
     Widget build(BuildContext context) {
       return new MaterialApp(
-        title: 'Instagram',
+        title: 'Covid-19',
         debugShowCheckedModeBanner: false,
         theme: new ThemeData(
             primarySwatch: Colors.blue,
