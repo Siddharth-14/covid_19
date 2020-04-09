@@ -71,48 +71,59 @@ class HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(5)),
                           elevation: 5,
                           color: Colors.yellow,
-                          child: Column(
-                            children: <Widget>[
-                              Column(
-                                mainAxisAlignment: MainAxisAlignment
-                                    .spaceBetween,
-                                children: <Widget>[
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment
-                                        .start,
-                                    children: <Widget>[
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                            0.0, 18.0, 0.0, 8.0),
-                                        child: Align(
-                                          alignment: Alignment.center,
-                                          child: Text(
-                                            brief["TotalConfirmed"].toString(),
-                                            style: TextStyle(
-                                                fontSize: 36.0,
-                                                fontWeight: FontWeight.bold),
+                          child: Container(
+                            decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                    begin: Alignment.topRight,
+                                    end: Alignment.bottomLeft,
+                                    colors: [Colors.amber[900], Colors.amber])),
+                            child: Column(
+                              children: <Widget>[
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment
+                                      .spaceBetween,
+                                  children: <Widget>[
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment
+                                          .start,
+                                      children: <Widget>[
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0.0, 18.0, 0.0, 8.0),
+                                          child: Align(
+                                            alignment: Alignment.center,
+                                            child: Text(
+                                              brief["TotalConfirmed"]
+                                                  .toString(),
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 36.0,
+                                                  fontWeight: FontWeight.bold),
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                            0.0, 0.0, 0.0, 0.0),
-                                        child: Align(
-                                          alignment: Alignment.bottomRight,
-                                          child: Text(
-                                            "Total Confirmed: ",
-                                            textAlign: TextAlign.left,
-                                            style: TextStyle(
-                                                fontSize: 18.0,
-                                                fontWeight: FontWeight.normal),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0.0, 0.0, 8.0, 0.0),
+                                          child: Align(
+                                            alignment: Alignment.bottomRight,
+                                            child: Text(
+                                              "Total Confirmed",
+                                              textAlign: TextAlign.left,
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18.0,
+                                                  fontWeight: FontWeight
+                                                      .normal),
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ],
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -131,49 +142,57 @@ class HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(5)),
                           elevation: 5,
                           color: Colors.red,
-                          child: Column(
-                            children: <Widget>[
-                              Column(
-                                mainAxisAlignment: MainAxisAlignment
-                                    .spaceBetween,
-                                children: <Widget>[
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment
-                                        .start,
-                                    children: <Widget>[
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                            0.0, 18.0, 0.0, 8.0),
-                                        child: Align(
-                                          alignment: Alignment.center,
-                                          child: Text(
-                                            brief["TotalDeaths"].toString(),
-                                            style: TextStyle(
-                                                fontSize: 36.0,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                            0.0, 0.0, 0.0, 0.0),
-                                        child: Align(
-                                          alignment: Alignment.bottomRight,
-                                          child: Text(
-                                            "Total Death: ",
-                                            style: TextStyle(
-                                                fontSize: 18.0,
-                                                fontWeight: FontWeight.normal,
-                                                fontFamily: 'Poppins'
+                          child: Container(
+                            decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                    begin: Alignment.topRight,
+                                    end: Alignment.bottomLeft,
+                                    colors: [Colors.red[900], Colors.red])),
+                            child: Column(
+                              children: <Widget>[
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment
+                                      .spaceBetween,
+                                  children: <Widget>[
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment
+                                          .start,
+                                      children: <Widget>[
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0.0, 18.0, 0.0, 8.0),
+                                          child: Align(
+                                            alignment: Alignment.center,
+                                            child: Text(
+                                              brief["TotalDeaths"].toString(),
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 36.0,
+                                                  fontWeight: FontWeight.bold),
                                             ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ],
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0.0, 0.0, 8.0, 0.0),
+                                          child: Align(
+                                            alignment: Alignment.bottomRight,
+                                            child: Text(
+                                              "Total Deaths",
+                                              style: TextStyle(
+                                                  fontSize: 18.0,
+                                                  fontWeight: FontWeight.normal,
+                                                  color: Colors.white
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -191,45 +210,56 @@ class HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(5)),
                         elevation: 5,
                         color: Colors.green,
-                        child: Column(
-                          children: <Widget>[
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0.0, 18.0, 0.0, 8.0),
-                                      child: Align(
-                                        alignment: Alignment.center,
-                                        child: Text(
-                                          brief["TotalRecovered"].toString(),
-                                          style: TextStyle(
-                                              fontSize: 36.0,
-                                              fontWeight: FontWeight.bold),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                  begin: Alignment.topRight,
+                                  end: Alignment.bottomLeft,
+                                  colors: [Colors.green[900], Colors.green])),
+                          child: Column(
+                            children: <Widget>[
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment
+                                    .spaceBetween,
+                                children: <Widget>[
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment
+                                        .start,
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            0.0, 18.0, 0.0, 8.0),
+                                        child: Align(
+                                          alignment: Alignment.center,
+                                          child: Text(
+                                            brief["TotalRecovered"].toString(),
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 36.0,
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0.0, 0.0, 0.0, 0.0),
-                                      child: Align(
-                                        alignment: Alignment.bottomRight,
-                                        child: Text(
-                                          "Total Recovered: ",
-                                          style: TextStyle(
-                                              fontSize: 18.0,
-                                              fontWeight: FontWeight.normal),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            0.0, 0.0, 8.0, 0.0),
+                                        child: Align(
+                                          alignment: Alignment.bottomRight,
+                                          child: Text(
+                                            "Total Recovered",
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 18.0,
+                                                fontWeight: FontWeight.normal),
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ],
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
