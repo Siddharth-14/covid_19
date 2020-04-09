@@ -1,9 +1,11 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:convert';
+
 import 'package:covid19/main.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'dart:async';
-import 'dart:convert';
+
+import 'NavDrawer.dart';
 
 class HomePageState extends State<HomePage> {
   List<dynamic> data;
@@ -30,34 +32,46 @@ class HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return new SafeArea(
-      child: Scaffold(
-        body: new Column(children: <Widget>[
+    return Scaffold(
+      drawer: NavDrawer(),
+      appBar: AppBar(
+        centerTitle: true,
+        iconTheme: new IconThemeData(color: Colors.black87),
+        backgroundColor: Colors.white,
+        title: Text('Home',
+          style:
+          TextStyle(
+              color: Colors.black87,
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold
+          ),
+        ),
+      ),
+      body: Column(children: <Widget>[
           Flexible(
             flex: 2,
-            child: Container(
-              child: new ListView.builder(
-                scrollDirection: Axis.horizontal,
-                shrinkWrap: true,
-                itemCount: brief == null ? 0 : brief.length,
-                itemBuilder: (context, position) {
-                  return Card(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(children: <Widget>[
+                new Container(
+                  child: new Card(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5)),
                     elevation: 5,
+                    color: Colors.yellow,
                     child: Column(
                       children: <Widget>[
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Row(
+                            Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(
-                                      12.0, 12.0, 12.0, 6.0),
+                                      6.0, 6.0, 6.0, 3.0),
                                   child: Text(
-                                    brief["TotalConfirmed"].toString(),
+                                    "Total Confirmed: ",
                                     style: TextStyle(
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.bold),
@@ -65,10 +79,12 @@ class HomePageState extends State<HomePage> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(
-                                      12.0, 6.0, 12.0, 12.0),
+                                      6.0, 6.0, 6.0, 3.0),
                                   child: Text(
-                                    brief["TotalDeaths"].toString(),
-                                    style: TextStyle(fontSize: 18.0),
+                                    brief["TotalConfirmed"].toString(),
+                                    style: TextStyle(
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ),
                               ],
@@ -77,9 +93,93 @@ class HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                  );
-                },
-              ),
+                  ),
+                ),
+                new Container(
+                  child: new Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)),
+                    elevation: 5,
+                    color: Colors.red,
+                    child: Column(
+                      children: <Widget>[
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(
+                                      6.0, 6.0, 6.0, 3.0),
+                                  child: Text(
+                                    "Total Deaths: ",
+                                    style: TextStyle(
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(
+                                      6.0, 6.0, 6.0, 3.0),
+                                  child: Text(
+                                    brief["TotalDeaths"].toString(),
+                                    style: TextStyle(
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                new Container(
+                  child: new Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)),
+                    elevation: 5,
+                    color: Colors.green,
+                    child: Column(
+                      children: <Widget>[
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(
+                                      6.0, 6.0, 6.0, 3.0),
+                                  child: Text(
+                                    "Total Recovered: ",
+                                    style: TextStyle(
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(
+                                      6.0, 6.0, 6.0, 3.0),
+                                  child: Text(
+                                    brief["TotalRecovered"].toString(),
+                                    style: TextStyle(
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ]),
             ),
           ),
           Flexible(
@@ -108,18 +208,77 @@ class HomePageState extends State<HomePage> {
                                   child: Text(
                                     data[position]["Country"],
                                     style: TextStyle(
-                                        fontSize: 22.0,
-                                        fontWeight: FontWeight.bold),
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'Poppins'),
                                   ),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      12.0, 6.0, 12.0, 12.0),
-                                  child: Text(
-                                    data[position]["TotalDeaths"].toString(),
-                                    style: TextStyle(fontSize: 18.0),
-                                  ),
-                                ),
+                                Row(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            12.0, 6.0, 12.0, 12.0),
+                                        child: Text(
+                                          "Total Confirmed:",
+                                          style: TextStyle(fontSize: 16.0),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            12.0, 3.0, 6.0, 3.0),
+                                        child: Text(
+                                          data[position]["TotalConfirmed"]
+                                              .toString(),
+                                          style: TextStyle(fontSize: 16.0),
+                                        ),
+                                      ),
+                                    ]),
+                                Row(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            12.0, 6.0, 12.0, 12.0),
+                                        child: Text(
+                                          "Total Recovered:",
+                                          style: TextStyle(fontSize: 16.0),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            12.0, 6.0, 12.0, 12.0),
+                                        child: Text(
+                                          data[position]["TotalRecovered"]
+                                              .toString(),
+                                          style: TextStyle(fontSize: 16.0),
+                                        ),
+                                      ),
+                                    ]),
+                                Row(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            12.0, 6.0, 12.0, 12.0),
+                                        child: Text(
+                                          "Total Deaths:",
+                                          style: TextStyle(fontSize: 16.0),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            12.0, 3.0, 6.0, 3.0),
+                                        child: Text(
+                                          data[position]["TotalDeaths"]
+                                              .toString(),
+                                          style: TextStyle(fontSize: 16.0),
+                                        ),
+                                      ),
+                                    ]),
                               ],
                             ),
                           ],
@@ -136,7 +295,6 @@ class HomePageState extends State<HomePage> {
             ),
           ),
         ]),
-      ),
     );
   }
 }
