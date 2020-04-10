@@ -81,16 +81,20 @@ class Contact extends StatelessWidget {
     return Scaffold(
       drawer: NavDrawer(),
       appBar: AppBar(
-        centerTitle: true,
         elevation: 0.0,
+        centerTitle: true,
         iconTheme: new IconThemeData(color: Colors.black87),
         backgroundColor: Colors.white,
-        title: Text(
-          'Contact',
-          style: TextStyle(
-              color: Colors.black87,
-              fontSize: 30.0,
-              fontWeight: FontWeight.bold),
+        title: Align(
+          alignment: Alignment.bottomRight,
+          child: Text('Contacts',
+            style:
+            TextStyle(
+                color: Colors.black87,
+                fontSize: 44.0,
+                fontWeight: FontWeight.bold
+            ),
+          ),
         ),
       ),
       body: new Container(

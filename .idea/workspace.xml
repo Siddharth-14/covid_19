@@ -6,41 +6,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Podfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/contact.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/info.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@2x.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-Black.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-BlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-BlackItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-ExtraBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-ExtraBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-ExtraLight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-ExtraLight.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-ExtraLightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-LightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-MediumItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-MediumItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-SemiBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-Thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Poppins-ThinItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/asset/fonts/Poppins/Poppins-ThinItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/covid19.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/NavDrawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NavDrawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/contact.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contact.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/info.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,11 +59,6 @@
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="809" />
-  </component>
   <component name="ProjectId" id="1aJQZq9hBbzVYMq6uDiNE8lePiD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -86,8 +77,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/asset/fonts/Poppins" />
       <recent name="$PROJECT_DIR$/asset" />
+      <recent name="$PROJECT_DIR$/asset/fonts/Poppins" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586450254857</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed UI and Added contacts and call features">
+      <created>1586520416871</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586520416871</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -183,7 +181,8 @@
     <MESSAGE value="Fixed the cards and added the search and ordered the list" />
     <MESSAGE value="Added gradient and changed font color" />
     <MESSAGE value="Added Font" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Font" />
+    <MESSAGE value="Changed UI and Added contacts and call features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed UI and Added contacts and call features" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
