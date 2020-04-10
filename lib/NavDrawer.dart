@@ -1,3 +1,6 @@
+import 'package:covid19/contact.dart';
+import 'package:covid19/info.dart';
+import 'package:covid19/main.dart';
 import 'package:flutter/material.dart';
 
 class NavDrawer extends StatelessWidget {
@@ -8,40 +11,46 @@ class NavDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            child: Text(
-              'Home',
-              style: TextStyle(color: Colors.white, fontSize: 25),
+            child: Align(
+              alignment: Alignment.bottomLeft,
+              child: Text(
+                'COVID-19',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
             ),
-            decoration: BoxDecoration(
-                color: Colors.green,
-                image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage('assets/images/cover.jpg'))),
           ),
           ListTile(
-            leading: Icon(Icons.input),
-            title: Text('Welcome'),
-            onTap: () => {},
+            leading: Icon(Icons.home),
+            title: Text('Home'),
+            onTap: () => {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (context) => new HomePage()))
+            },
           ),
           ListTile(
-            leading: Icon(Icons.verified_user),
-            title: Text('Profile'),
+            leading: Icon(Icons.info),
+            title: Text('Info'),
+            onTap: () => {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (context) => new Info()))
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.book),
+            title: Text('Guidelines'),
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.exit_to_app),
-            title: Text('Logout'),
-            onTap: () => {Navigator.of(context).pop()},
+            leading: Icon(Icons.contacts),
+            title: Text('Contact'),
+            onTap: () => {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (context) => new Contact()))
+            },
           ),
         ],
       ),
