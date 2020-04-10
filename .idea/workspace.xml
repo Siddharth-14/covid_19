@@ -6,29 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a0fbdf3-e76b-466f-92cc-d37ba621a51a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Poppins-ThinItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +86,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Fixed the cards and added the navigation drawer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the cards and added the navigation drawer" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Siddharth-14/covid_19&#10;&#10; Conflicts:&#10;&#9;.idea/libraries/Dart_Packages.xml&#10;&#9;.idea/workspace.xml&#10;&#9;lib/main.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Siddharth-14/covid_19&#10;&#10; Conflicts:&#10;&#9;.idea/libraries/Dart_Packages.xml&#10;&#9;.idea/workspace.xml&#10;&#9;lib/main.dart" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
