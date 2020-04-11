@@ -2,6 +2,7 @@ import 'package:covid19/contact.dart';
 import 'package:covid19/info.dart';
 import 'package:covid19/main.dart';
 import 'package:flutter/material.dart';
+import 'package:covid19/guideline.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -42,7 +43,11 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.book),
             title: Text('Guidelines'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () =>
+            {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (context) => new Guideline()))
+            },
           ),
           ListTile(
             leading: Icon(Icons.contacts),

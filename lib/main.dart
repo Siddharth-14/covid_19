@@ -1,5 +1,7 @@
 import 'package:covid19/home.dart';
 import 'package:flutter/material.dart';
+import 'package:covid19/contact.dart';
+import 'package:covid19/guideline.dart';
 
 void main() {
   runApp(new MaterialApp(
