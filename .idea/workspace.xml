@@ -5,16 +5,21 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="Added gradient and changed font color">
-      <change afterPath="$PROJECT_DIR$/lib/developer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+    <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/components/animated_widget_sequence.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/breathing_circle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/number_selection_card.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/round_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/round_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/time_slider_card.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/breathe_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/settings_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/state/settings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utilities/constants.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/covid19.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/NavDrawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NavDrawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/guideline.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/guideline.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/info.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,11 +58,11 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ipsita\AndroidStudioProjects\covid_19\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/asset" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ipsita\AndroidStudioProjects\covid_19\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -111,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586599579620</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added gradient and changed font color">
+      <created>1586953051554</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586953051554</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -138,9 +150,9 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Fixed the cards and added the navigation drawer" />
     <MESSAGE value="Fixed the cards and added the search and ordered the list" />
-    <MESSAGE value="Added gradient and changed font color" />
     <MESSAGE value="Added Guidelines" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Guidelines" />
+    <MESSAGE value="Added gradient and changed font color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added gradient and changed font color" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -150,42 +162,42 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/home.dart</url>
-          <line>13</line>
+          <line>20</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/home.dart</url>
-          <line>60</line>
+          <line>67</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/home.dart</url>
-          <line>299</line>
+          <line>306</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/guideline.dart</url>
-          <line>31</line>
+          <line>26</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/guideline.dart</url>
-          <line>104</line>
+          <line>101</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/guideline.dart</url>
-          <line>165</line>
+          <line>163</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/guideline.dart</url>
-          <line>225</line>
+          <line>224</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/guideline.dart</url>
-          <line>513</line>
+          <line>518</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
