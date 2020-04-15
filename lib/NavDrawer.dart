@@ -1,8 +1,8 @@
 import 'package:covid19/contact.dart';
-import 'package:covid19/info.dart';
+import 'package:covid19/developer.dart';
+import 'package:covid19/guideline.dart';
 import 'package:covid19/main.dart';
 import 'package:flutter/material.dart';
-import 'package:covid19/guideline.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -18,6 +18,7 @@ class NavDrawer extends StatelessWidget {
                 'COVID-19',
                 style: TextStyle(
                     color: Colors.black,
+                    fontFamily: 'Poppins',
                     fontSize: 25,
                     fontWeight: FontWeight.bold
                 ),
@@ -30,14 +31,6 @@ class NavDrawer extends StatelessWidget {
             onTap: () => {
               Navigator.push(context,
                   new MaterialPageRoute(builder: (context) => new HomePage()))
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.info),
-            title: Text('Info'),
-            onTap: () => {
-              Navigator.push(context,
-                  new MaterialPageRoute(builder: (context) => new Info()))
             },
           ),
           ListTile(
@@ -56,6 +49,23 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(context,
                   new MaterialPageRoute(builder: (context) => new Contact()))
             },
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text('Developers'),
+            onTap: () =>
+            {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (context) => new Developer()))
+            },
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Text('Developed by'),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Text('IEEE CS-VIT'),
           ),
         ],
       ),
