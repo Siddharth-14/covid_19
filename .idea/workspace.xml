@@ -6,21 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/components/animated_widget_sequence.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/breathing_circle.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/number_selection_card.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/round_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/round_container.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/time_slider_card.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/breathe_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/settings_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/state/settings.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utilities/constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/NavDrawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NavDrawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +19,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="520078edfe363573" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_27" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -123,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586953051554</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added breathing meditation functionality">
+      <created>1586960919265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586960919265</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -152,7 +147,8 @@
     <MESSAGE value="Fixed the cards and added the search and ordered the list" />
     <MESSAGE value="Added Guidelines" />
     <MESSAGE value="Added gradient and changed font color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gradient and changed font color" />
+    <MESSAGE value="Added breathing meditation functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added breathing meditation functionality" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -162,18 +158,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/home.dart</url>
-          <line>20</line>
+          <line>9</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/home.dart</url>
-          <line>67</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/home.dart</url>
-          <line>306</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/guideline.dart</url>

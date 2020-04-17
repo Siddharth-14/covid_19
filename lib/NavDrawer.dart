@@ -1,4 +1,3 @@
-import 'package:covid19/contact.dart';
 import 'package:covid19/developer.dart';
 import 'package:covid19/guideline.dart';
 import 'package:covid19/main.dart';
@@ -36,6 +35,15 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: Icon(Icons.filter_hdr),
+            title: Text('My District'),
+            onTap: () =>
+            {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (context) => new HomePage()))
+            },
+          ),
+          ListTile(
             leading: Icon(Icons.book),
             title: Text('Guidelines'),
             onTap: () =>
@@ -57,13 +65,13 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.contacts),
             title: Text('Contact'),
-            onTap: () => {
+            /*onTap: () => {
               Navigator.push(context,
                   new MaterialPageRoute(builder: (context) => new Contact()))
-            },
+            },*/
           ),
           ListTile(
-            leading: Icon(Icons.info),
+            leading: Icon(Icons.group),
             title: Text('Developers'),
             onTap: () =>
             {

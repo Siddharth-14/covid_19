@@ -8,23 +8,16 @@ import 'package:http/http.dart' as http;
 import 'NavDrawer.dart';
 
 class HomePageState extends State<HomePage> {
-  List<dynamic> data;
-  Map<String, dynamic> brief;
+  Map<String, dynamic> con;
 
   Future<String> getData() async {
     var response = await http.get(
-        Uri.encodeFull("https://api.covid19api.com/summary"),
+        Uri.encodeFull("https://api.covid19india.org/data.json"),
         headers: {"Accept": "application/json"});
 
     this.setState(() {
-      Map<String, dynamic> con = json.decode(response.body);
-      data = con["Countries"];
-      brief = con["Global"];
-      Comparator<dynamic> comparator = (b, a) =>
-          a["TotalConfirmed"].compareTo(b["TotalConfirmed"]);
-      data.sort(comparator);
+      con = json.decode(response.body);
     });
-    return "Success!";
   }
 
   @override
@@ -102,8 +95,7 @@ class HomePageState extends State<HomePage> {
                                                 child: Align(
                                                   alignment: Alignment.center,
                                                   child: Text(
-                                                    brief["TotalConfirmed"]
-                                                        .toString(),
+                                                    con["statewise"][0]["confirmed"],
                                                     style: TextStyle(
                                                         color: Colors.white,
                                                         fontSize: 36.0,
@@ -180,8 +172,7 @@ class HomePageState extends State<HomePage> {
                                                 child: Align(
                                                   alignment: Alignment.center,
                                                   child: Text(
-                                                    brief["TotalDeaths"]
-                                                        .toString(),
+                                                    con["statewise"][0]["deaths"],
                                                     style: TextStyle(
                                                         color: Colors.white,
                                                         fontSize: 36.0,
@@ -257,8 +248,7 @@ class HomePageState extends State<HomePage> {
                                               child: Align(
                                                 alignment: Alignment.center,
                                                 child: Text(
-                                                  brief["TotalRecovered"]
-                                                      .toString(),
+                                                  con["statewise"][0]["recovered"],
                                                   style: TextStyle(
                                                       color: Colors.white,
                                                       fontSize: 36.0,
@@ -310,8 +300,10 @@ class HomePageState extends State<HomePage> {
                         );
                       },
                       shrinkWrap: true,
-                      itemCount: data == null ? 0 : data.length,
+                      itemCount: con["statewise"] == null ? 0 : con["statewise"]
+                          .length - 1,
                       itemBuilder: (context, position) {
+                        position++;
                         return Card(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5)),
@@ -330,7 +322,7 @@ class HomePageState extends State<HomePage> {
                                         padding: const EdgeInsets.fromLTRB(
                                             12.0, 12.0, 12.0, 2.0),
                                         child: Text(
-                                          data[position]["Country"],
+                                          con["statewise"][position]["state"],
                                           style: TextStyle(
                                               fontSize: 20.0,
                                               fontWeight: FontWeight.bold,
@@ -356,8 +348,7 @@ class HomePageState extends State<HomePage> {
                                                   .fromLTRB(
                                                   12.0, 3.0, 6.0, 3.0),
                                               child: Text(
-                                                data[position]["TotalConfirmed"]
-                                                    .toString(),
+                                                con["statewise"][position]["confirmed"],
                                                 style: TextStyle(
                                                     fontSize: 16.0),
                                               ),
@@ -382,8 +373,7 @@ class HomePageState extends State<HomePage> {
                                                   .fromLTRB(
                                                   12.0, 6.0, 12.0, 2.0),
                                               child: Text(
-                                                data[position]["TotalRecovered"]
-                                                    .toString(),
+                                                con["statewise"][position]["recovered"],
                                                 style: TextStyle(
                                                     fontSize: 16.0),
                                               ),
@@ -408,8 +398,7 @@ class HomePageState extends State<HomePage> {
                                                   .fromLTRB(
                                                   12.0, 3.0, 6.0, 3.0),
                                               child: Text(
-                                                data[position]["TotalDeaths"]
-                                                    .toString(),
+                                                con["statewise"][position]["deaths"],
                                                 style: TextStyle(
                                                     fontSize: 16.0),
                                               ),
