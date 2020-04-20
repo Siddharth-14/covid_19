@@ -4,6 +4,8 @@ import 'package:covid19/main.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'contact.dart';
+
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -55,10 +57,10 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.contacts),
             title: Text('Contact'),
-            /*onTap: () => {
+            onTap: () => {
               Navigator.push(context,
                   new MaterialPageRoute(builder: (context) => new Contact()))
-            },*/
+            },
           ),
           ListTile(
             leading: Icon(Icons.group),
