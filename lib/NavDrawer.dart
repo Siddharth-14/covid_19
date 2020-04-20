@@ -1,8 +1,8 @@
 import 'package:covid19/developer.dart';
+import 'package:covid19/donation.dart';
 import 'package:covid19/guideline.dart';
 import 'package:covid19/main.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import 'contact.dart';
 
@@ -36,15 +36,7 @@ class NavDrawer extends StatelessWidget {
                   new MaterialPageRoute(builder: (context) => new HomePage()))
             },
           ),
-          ListTile(
-            leading: Icon(Icons.filter_hdr),
-            title: Text('My District'),
-            onTap: () =>
-            {
-              Navigator.push(context,
-                  new MaterialPageRoute(builder: (context) => new HomePage()))
-            },
-          ),
+
           ListTile(
             leading: Icon(Icons.book),
             title: Text('Guidelines'),
@@ -56,10 +48,19 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.contacts),
-            title: Text('Contact'),
+            title: Text('Contacts'),
             onTap: () => {
               Navigator.push(context,
                   new MaterialPageRoute(builder: (context) => new Contact()))
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.sentiment_satisfied),
+            title: Text('Donations'),
+            onTap: () =>
+            {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (context) => new Donation()))
             },
           ),
           ListTile(
@@ -71,9 +72,13 @@ class NavDrawer extends StatelessWidget {
                   new MaterialPageRoute(builder: (context) => new Developer()))
             },
           ),
-          Align(
+          Padding(
+            padding: const EdgeInsets
+                .fromLTRB(0.0, 150.0, 0.0, 8.0),
+            child: Align(
             alignment: Alignment.bottomCenter,
             child: Text('Developed by'),
+          ),
           ),
           Align(
             alignment: Alignment.bottomCenter,
