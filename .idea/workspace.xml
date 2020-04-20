@@ -6,23 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/NavDrawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NavDrawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/animated_widget_sequence.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/breathing_circle.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/number_selection_card.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/round_button.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/round_container.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/time_slider_card.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/breathe_screen.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/settings_screen.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/state/settings.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utilities/breathing_animation.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utilities/constants.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/guideline.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/guideline.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +18,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_27" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -138,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587114839590</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added breathing meditation functionality">
+      <created>1587389170607</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587389170607</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">

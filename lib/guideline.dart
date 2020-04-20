@@ -39,7 +39,7 @@ class Guideline extends StatelessWidget {
                         style:
                         TextStyle(
                             color: Colors.black87,
-                            fontSize: 24.0,
+                            fontSize: 22.0,
                             fontWeight: FontWeight.bold,
                             fontFamily: 'Poppins'
                         ),
@@ -53,7 +53,7 @@ class Guideline extends StatelessWidget {
                         child: Center(
                           child: SizedBox(
                             width: 200.0,
-                            height: 120.0,
+                            height: 110.0,
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0),
                               child: new Card(
@@ -116,7 +116,7 @@ class Guideline extends StatelessWidget {
                         child: Center(
                           child: SizedBox(
                             width: 200.0,
-                            height: 120.0,
+                            height: 110.0,
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0),
                               child: new Card(
@@ -177,7 +177,7 @@ class Guideline extends StatelessWidget {
                       new Container(
                         child: SizedBox(
                           width: 200.0,
-                          height: 120.0,
+                          height: 110.0,
                           child: Padding(
                             padding: const EdgeInsets.only(left: 8.0),
                             child: new Card(
@@ -252,7 +252,7 @@ class Guideline extends StatelessWidget {
                           style:
                           TextStyle(
                               color: Colors.black87,
-                              fontSize: 24.0,
+                              fontSize: 22.0,
                               fontWeight: FontWeight.bold,
                               fontFamily: 'Poppins'
                           ),
@@ -272,7 +272,7 @@ class Guideline extends StatelessWidget {
                           child: Center(
                             child: SizedBox(
                               width: 300.0,
-                              height: 200.0,
+                              height: 180.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 8.0),
                                 child: new Card(
@@ -347,7 +347,7 @@ class Guideline extends StatelessWidget {
                           child: Center(
                             child: SizedBox(
                               width: 300.0,
-                              height: 200.0,
+                              height: 180.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 8.0),
                                 child: new Card(
@@ -421,7 +421,7 @@ class Guideline extends StatelessWidget {
                         new Container(
                           child: SizedBox(
                             width: 300.0,
-                            height: 200.0,
+                            height: 180.0,
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0),
                               child: new Card(
@@ -506,7 +506,7 @@ class Guideline extends StatelessWidget {
                           style:
                           TextStyle(
                               color: Colors.black87,
-                              fontSize: 24.0,
+                              fontSize: 22.0,
                               fontWeight: FontWeight.bold,
                               fontFamily: 'Poppins'
                           ),
@@ -532,8 +532,8 @@ class Guideline extends StatelessWidget {
                         new Container(
                           child: Center(
                             child: SizedBox(
-                              width: 150.0,
-                              height: 120.0,
+                              width: 120.0,
+                              height: 100.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 8.0),
                                 child: new Card(
@@ -595,8 +595,8 @@ class Guideline extends StatelessWidget {
                         new Container(
                           child: Center(
                             child: SizedBox(
-                              width: 150.0,
-                              height: 120.0,
+                              width: 120.0,
+                              height: 100.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 8.0),
                                 child: new Card(
@@ -658,8 +658,8 @@ class Guideline extends StatelessWidget {
                         new Container(
                           child: Center(
                             child: SizedBox(
-                              width: 150.0,
-                              height: 120.0,
+                              width: 120.0,
+                              height: 100.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 8.0),
                                 child: new Card(
@@ -721,8 +721,8 @@ class Guideline extends StatelessWidget {
                         new Container(
                           child: Center(
                             child: SizedBox(
-                              width: 150.0,
-                              height: 120.0,
+                              width: 120.0,
+                              height: 100.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 8.0),
                                 child: new Card(
