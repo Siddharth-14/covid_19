@@ -18,6 +18,8 @@ class HomePageState extends State<HomePage> {
     this.setState(() {
       con = json.decode(response.body);
     });
+
+    return "Success";
   }
 
   @override
@@ -31,7 +33,6 @@ class HomePageState extends State<HomePage> {
     return FutureBuilder(
         future: getData(),
         builder: (ctx, snapshot) {
-          if (snapshot.connectionState == ConnectionState.done) {
             return Scaffold(
               drawer: NavDrawer(),
               appBar: AppBar(
@@ -421,32 +422,6 @@ class HomePageState extends State<HomePage> {
                 ),
               ]),
             );
-          } else {
-            return Scaffold(
-              drawer: NavDrawer(),
-              appBar: AppBar(
-                elevation: 0.0,
-                centerTitle: true,
-                iconTheme: new IconThemeData(color: Colors.black87),
-                backgroundColor: Colors.white,
-                title: Align(
-                  alignment: Alignment.bottomRight,
-                  child: Text('Home',
-                    style:
-                    TextStyle(
-                        color: Colors.black87,
-                        fontSize: 44.0,
-                        fontWeight: FontWeight.bold
-                    ),
-                  ),
-                ),
-              ),
-              body: Center(
-                  child: CircularProgressIndicator(
-                  )
-              ),
-            );
-          }
         }
     );
   }

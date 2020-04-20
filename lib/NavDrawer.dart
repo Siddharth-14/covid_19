@@ -1,8 +1,8 @@
 import 'package:covid19/developer.dart';
 import 'package:covid19/guideline.dart';
 import 'package:covid19/main.dart';
-import 'package:covid19/screens/settings_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 
 class NavDrawer extends StatelessWidget {
@@ -48,18 +48,8 @@ class NavDrawer extends StatelessWidget {
             title: Text('Guidelines'),
             onTap: () =>
             {
-              Navigator.push(context,
+            Navigator.push(context,
                   new MaterialPageRoute(builder: (context) => new Guideline()))
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.book),
-            title: Text('Breathing Meditation'),
-            onTap: () =>
-            {
-              Navigator.push(context,
-                  new MaterialPageRoute(
-                      builder: (context) => new SettingsScreen()))
             },
           ),
           ListTile(
