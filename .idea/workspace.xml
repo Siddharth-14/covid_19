@@ -6,23 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/NavDrawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NavDrawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/animated_widget_sequence.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/breathing_circle.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/number_selection_card.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/round_button.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/round_container.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/time_slider_card.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/breathe_screen.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/settings_screen.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/state/settings.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utilities/breathing_animation.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utilities/constants.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/developer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/developer.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -75,9 +75,9 @@ class Developer extends StatelessWidget {
                                         padding: const EdgeInsets.fromLTRB(
                                             12.0, 18.0, 0.0, 8.0),
                                         child: Align(
-                                          alignment: Alignment.center,
+                                          alignment: Alignment.topLeft,
                                           child: Text(
-                                            "Siddharth Rajesh Goradia",
+                                            "Siddharth Rajesh\nGoradia",
                                             style: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 24.0,

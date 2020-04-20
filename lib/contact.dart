@@ -3,18 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class CallService {
-  void call(String number) => launch("tel:$number");
-}
-
-GetIt locator = GetIt();
-
-void set() {
-  locator.registerSingleton(CallService());
-}
 
 class Contact extends StatelessWidget {
-  final CallService _service = locator<CallService>();
   List<String> state = [
     "Andhra Pradesh",
     "Arunachal Pradesh",
@@ -46,7 +36,7 @@ class Contact extends StatelessWidget {
     "West Bengal"
   ];
   List<int> number = [
-    0866 - 2410978,
+    08662410978,
     9436055743,
     6913347770,
     104,
@@ -57,20 +47,20 @@ class Contact extends StatelessWidget {
     104,
     104,
     104,
-    0471 - 2552056,
+    04712552056,
     104,
-    020 - 26127394,
+    02026127394,
     3852411668,
     108,
     102,
     7005539653,
     9439994859,
     104,
-    0141 - 2225624,
+    01412225624,
     104,
-    044 - 29510500,
+    04429510500,
     104,
-    0381 - 2315879,
+    03812315879,
     104,
     18001805145,
     1800313444222,
@@ -114,10 +104,6 @@ class Contact extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5)),
               elevation: 5,
               child: new InkWell(
-                onTap: () {
-                  print("Tapped");
-                  _service.call(number[position].toString());
-                },
                 child: Column(
                   children: <Widget>[
                     Row(
