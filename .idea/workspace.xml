@@ -7,7 +7,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/developer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/developer.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/donation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/donation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587404763692</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated Donations">
+      <created>1587410518285</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587410518303</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -179,7 +188,8 @@
     <MESSAGE value="Added breathing meditation functionality" />
     <MESSAGE value="Updated Guidelines" />
     <MESSAGE value="Added Donations and Updated Developers and NavDrawer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Donations and Updated Developers and NavDrawer" />
+    <MESSAGE value="Updated Donations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Donations" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

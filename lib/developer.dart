@@ -46,7 +46,7 @@ class Developer extends StatelessWidget {
                 child: Center(
                   child: SizedBox(
                     width: 390.0,
-                    height: 250.0,
+                    height: 20.0,
                     child: Padding(
                       padding: const EdgeInsets.only(left: 8.0),
                       child: new Card(
@@ -203,7 +203,7 @@ class Developer extends StatelessWidget {
                 child: Center(
                   child: SizedBox(
                     width: 390.0,
-                    height: 250.0,
+                    height: 260.0,
                     child: Padding(
                       padding: const EdgeInsets.only(left: 8.0),
                       child: new Card(
