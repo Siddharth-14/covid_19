@@ -17,7 +17,7 @@ class Developer extends StatelessWidget {
             'Developers',
             style: TextStyle(
                 color: Colors.black87,
-                fontSize: 44.0,
+                fontSize: 38.0,
                 fontWeight: FontWeight.bold),
           ),
         ),

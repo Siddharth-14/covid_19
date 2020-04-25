@@ -1,22 +1,9 @@
 import 'dart:async';
 
-import 'package:covid19/home.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+import 'main.dart';
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Covid Care",
-      home: SplashScreenPage(),
-    );
-  }
-}
-// First screen --- Splash Screen Page
 class SplashScreenPage extends StatefulWidget {
   @override
   _SplashScreenPageState createState() => _SplashScreenPageState();
@@ -67,15 +54,10 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                   fontFamily: 'Poppins'),
             ),
           ),
-
         ],
       ),
     );
   }
 }
 
-class HomePage extends StatefulWidget {
 
-  @override
-  HomePageState createState() => new HomePageState();
-}

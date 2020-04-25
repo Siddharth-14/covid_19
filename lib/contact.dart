@@ -1,7 +1,5 @@
 import 'package:covid19/NavDrawer.dart';
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 
 class Contact extends StatelessWidget {
@@ -81,7 +79,7 @@ class Contact extends StatelessWidget {
             style:
             TextStyle(
                 color: Colors.black87,
-                fontSize: 44.0,
+                fontSize: 38.0,
                 fontWeight: FontWeight.bold
             ),
           ),

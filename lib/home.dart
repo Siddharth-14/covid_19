@@ -46,7 +46,7 @@ class HomePageState extends State<HomePage> {
                     style:
                     TextStyle(
                         color: Colors.black87,
-                        fontSize: 44.0,
+                        fontSize: 38.0,
                         fontWeight: FontWeight.bold
                     ),
                   ),
@@ -63,7 +63,7 @@ class HomePageState extends State<HomePage> {
                         new Container(
                           child: Center(
                             child: SizedBox(
-                              width: 1800.0,
+                              width: 180.0,
                               height: 110.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 8.0),

@@ -18,7 +18,7 @@ class Guideline extends StatelessWidget {
             style:
             TextStyle(
                 color: Colors.black87,
-                fontSize: 48.0,
+                fontSize: 38.0,
                 fontWeight: FontWeight.bold
             ),
           ),
