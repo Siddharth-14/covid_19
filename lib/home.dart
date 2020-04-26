@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:covid19/main.dart';
+import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -36,16 +37,32 @@ class HomePageState extends State<HomePage> {
             return Scaffold(
               drawer: NavDrawer(),
               appBar: AppBar(
+                actions: <Widget>[
+                  IconButton(icon: Icon(Theme
+                      .of(context)
+                      .brightness == Brightness.dark
+                      ? Icons.lightbulb_outline
+                      : Icons.highlight), onPressed: () {
+                    DynamicTheme.of(context).setBrightness(Theme
+                        .of(context)
+                        .brightness == Brightness.dark
+                        ? Brightness.dark
+                        : Brightness.light);
+                  }),
+                  IconButton(icon: Icon(Icons.search), onPressed: () {
+                    showSearch(context: context, delegate: DataSearch());
+                  })
+                ],
                 elevation: 0.0,
                 centerTitle: true,
-                iconTheme: new IconThemeData(color: Colors.black87),
-                backgroundColor: Colors.white,
+                iconTheme: new IconThemeData(),
+                //backgroundColor: Colors.white,
                 title: Align(
-                  alignment: Alignment.bottomRight,
+                  alignment: Alignment.bottomCenter,
                   child: Text('Home',
                     style:
                     TextStyle(
-                        color: Colors.black87,
+                      //color: Colors.black87,
                         fontSize: 38.0,
                         fontWeight: FontWeight.bold
                     ),
@@ -53,7 +70,7 @@ class HomePageState extends State<HomePage> {
                 ),
               ),
               body: Padding(
-                padding: const EdgeInsets.fromLTRB(8.0,8.0,0.0,0.0),
+                padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                 child: Column(children: <Widget>[
                   Flexible(
                     flex: 2,
@@ -66,7 +83,7 @@ class HomePageState extends State<HomePage> {
                               width: 180.0,
                               height: 110.0,
                               child: Padding(
-                                padding: const EdgeInsets.only(left: 8.0),
+                                padding: const EdgeInsets.only(left: 0.0),
                                 child: new Card(
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(5)),
@@ -323,7 +340,7 @@ class HomePageState extends State<HomePage> {
                                       children: <Widget>[
                                         Padding(
                                           padding: const EdgeInsets.fromLTRB(
-                                              12.0, 12.0, 12.0, 2.0),
+                                              12.0, 8.0, 12.0, 2.0),
                                           child: Text(
                                             con["statewise"][position]["state"],
                                             style: TextStyle(
@@ -391,7 +408,7 @@ class HomePageState extends State<HomePage> {
                                                     .fromLTRB(
                                                     12.0, 6.0, 12.0, 2.0),
                                                 child: Text(
-                                                  "Total Deaths:",
+                                                  "Total Deaths:      ",
                                                   style: TextStyle(
                                                       fontSize: 16.0),
                                                 ),
@@ -399,7 +416,7 @@ class HomePageState extends State<HomePage> {
                                               Padding(
                                                 padding: const EdgeInsets
                                                     .fromLTRB(
-                                                    12.0, 3.0, 6.0, 3.0),
+                                                    12.0, 3.0, 6.0, 8.0),
                                                 child: Text(
                                                   con["statewise"][position]["deaths"],
                                                   style: TextStyle(
@@ -428,4 +445,54 @@ class HomePageState extends State<HomePage> {
         }
     );
   }
+}
+
+class DataSearch extends SearchDelegate<String> {
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    return [
+      IconButton(icon: Icon(Icons.clear), onPressed: () {
+        query = "";
+      })
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    return IconButton(icon: AnimatedIcon(
+        icon: AnimatedIcons.menu_arrow, progress: transitionAnimation),
+        onPressed: () {
+          close(context, null);
+        });
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    return null;
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    //final suggestionList = query.isEmpty?recentStates:state.where((p)=>p.startsWith(query)).toList();
+
+    return ListView.builder(itemBuilder: (context, index) =>
+        ListTile(
+          onTap: () {
+            showResults(context);
+          },
+          leading: Icon(Icons.location_city),
+          /*title: RichText(text: TextSpan(
+          text: suggestionList[index].substring(0,query.length),
+          style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
+          children: [TextSpan(
+              text: suggestionList[index].substring(query.length),
+              style: TextStyle(color: Colors.grey)
+          )]
+      )),
+    ),
+        itemCount: suggestionList.length*/
+        )
+    );
+  }
+
 }

@@ -1,5 +1,6 @@
 import 'package:covid19/developer.dart';
 import 'package:covid19/donation.dart';
+import 'package:covid19/fact.dart';
 import 'package:covid19/guideline.dart';
 import 'package:covid19/main.dart';
 import 'package:flutter/material.dart';
@@ -18,9 +19,9 @@ class NavDrawer extends StatelessWidget {
             child: Align(
               alignment: Alignment.bottomLeft,
               child: Text(
-                'COVID-19',
+                'COVID CARE',
                 style: TextStyle(
-                    color: Colors.black,
+                  //color: Colors.black,
                     fontFamily: 'Poppins',
                     fontSize: 25,
                     fontWeight: FontWeight.bold
@@ -52,6 +53,15 @@ class NavDrawer extends StatelessWidget {
             onTap: () => {
               Navigator.push(context,
                   new MaterialPageRoute(builder: (context) => new Contact()))
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('Myth Busters'),
+            onTap: () =>
+            {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (context) => new Fact()))
             },
           ),
           ListTile(

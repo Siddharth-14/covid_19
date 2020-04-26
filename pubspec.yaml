@@ -30,6 +30,7 @@ dependencies:
     git:
       url: https://github.com/HornMichaelS/slide_countdown_clock.git
       ref: master
+  dynamic_theme:
 
 dev_dependencies:
   flutter_test:

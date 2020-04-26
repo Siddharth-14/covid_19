@@ -1,18 +1,50 @@
 import 'dart:async';
 
 import 'package:covid19/home.dart';
+import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
+Map<int, Color> color = {
+  50: Color.fromRGBO(136, 14, 79, .1),
+  100: Color.fromRGBO(136, 14, 79, .2),
+  200: Color.fromRGBO(136, 14, 79, .3),
+  300: Color.fromRGBO(136, 14, 79, .4),
+  400: Color.fromRGBO(136, 14, 79, .5),
+  500: Color.fromRGBO(136, 14, 79, .6),
+  600: Color.fromRGBO(136, 14, 79, .7),
+  700: Color.fromRGBO(136, 14, 79, .8),
+  800: Color.fromRGBO(136, 14, 79, .9),
+  900: Color.fromRGBO(136, 14, 79, 1),
+};
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Covid Care",
-      home: SplashScreenPage(),
+    MaterialColor colorCustom = MaterialColor(0xFFFFFFFF, color);
+    return DynamicTheme(
+      data: (brightness) {
+        return ThemeData(
+          //primaryColor: Colors.white,
+          //accentColor: Colors.white,
+          primarySwatch: colorCustom,
+          brightness: brightness == Brightness.light
+              ? Brightness.dark
+              : Brightness.light,
+          scaffoldBackgroundColor: brightness == Brightness.light ? Colors
+              .blueGrey[2000] : Colors.white,
+        );
+      },
+      themedWidgetBuilder: (context, theme) {
+        return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: "Covid Care",
+            theme: theme,
+            home: SplashScreenPage()
+        );
+      },
+
     );
   }
 }
@@ -30,7 +62,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   }
 
   startSplashScreen() async {
-    var duration = const Duration(seconds: 10);
+    var duration = const Duration(seconds: 6);
     return Timer(duration, () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) {
