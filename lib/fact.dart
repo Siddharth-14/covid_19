@@ -57,9 +57,9 @@ class Fact extends StatelessWidget {
               //]),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
                       child: new Card(
@@ -105,14 +105,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
                       child: new Card(
@@ -158,14 +158,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -211,14 +211,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -264,14 +264,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -317,14 +317,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -370,14 +370,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -423,14 +423,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -476,14 +476,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -529,14 +529,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -582,14 +582,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -635,14 +635,14 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
               new Container(
                 child: Center(
-                  child: SizedBox(
+                  /*child: SizedBox(
                     width: 220.0,
-                    height: 200.0,
+                    height: 200.0,*/
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
                       child: new Card(
@@ -688,7 +688,7 @@ class Fact extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  //),
                 ),
               ),
             ]),
