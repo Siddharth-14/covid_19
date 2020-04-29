@@ -1,85 +1,84 @@
-import 'package:covid19/NavDrawer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+var maplist = new Map();
+List<String> state = [
+  "Andhra Pradesh",
+  "Arunachal Pradesh",
+  "Assam",
+  "Bihar",
+  "Chhattisgarh",
+  "Goa",
+  "Gujarat",
+  "Haryana",
+  "Himachal Pradesh",
+  "Jharkhand",
+  "Karnataka",
+  "Kerala",
+  "Madhya Pradesh",
+  "Maharashtra",
+  "Manipur",
+  "Meghalaya",
+  "Mizoram",
+  "Nagaland",
+  "Odisha",
+  "Punjab",
+  "Rajasthan",
+  "Sikkim",
+  "Tamil Nadu",
+  "Telangana",
+  "Tripura",
+  "Uttarakhand",
+  "Uttar Pradesh",
+  "West Bengal"
+];
+List<int> number = [
+  08662410978,
+  9436055743,
+  6913347770,
+  104,
+  104,
+  104,
+  104,
+  8558893911,
+  104,
+  104,
+  104,
+  04712552056,
+  104,
+  02026127394,
+  3852411668,
+  108,
+  102,
+  7005539653,
+  9439994859,
+  104,
+  01412225624,
+  104,
+  04429510500,
+  104,
+  03812315879,
+  104,
+  18001805145,
+  1800313444222,
+];
 
 class Contact extends StatelessWidget {
-  List<String> state = [
-    "Andhra Pradesh",
-    "Arunachal Pradesh",
-    "Assam",
-    "Bihar",
-    "Chhattisgarh",
-    "Goa",
-    "Gujarat",
-    "Haryana",
-    "Himachal Pradesh",
-    "Jharkhand",
-    "Karnataka",
-    "Kerala",
-    "Madhya Pradesh",
-    "Maharashtra",
-    "Manipur",
-    "Meghalaya",
-    "Mizoram",
-    "Nagaland",
-    "Odisha",
-    "Punjab",
-    "Rajasthan",
-    "Sikkim",
-    "Tamil Nadu",
-    "Telangana",
-    "Tripura",
-    "Uttarakhand",
-    "Uttar Pradesh",
-    "West Bengal"
-  ];
-  List<int> number = [
-    08662410978,
-    9436055743,
-    6913347770,
-    104,
-    104,
-    104,
-    104,
-    8558893911,
-    104,
-    104,
-    104,
-    04712552056,
-    104,
-    02026127394,
-    3852411668,
-    108,
-    102,
-    7005539653,
-    9439994859,
-    104,
-    01412225624,
-    104,
-    04429510500,
-    104,
-    03812315879,
-    104,
-    18001805145,
-    1800313444222,
-  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavDrawer(),
       appBar: AppBar(
         /*actions: <Widget>[
           IconButton(icon: Icon(Theme.of(context).brightness==Brightness.dark?Icons.lightbulb_outline:Icons.highlight), onPressed: (){
             DynamicTheme.of(context).setBrightness(Theme.of(context).brightness==Brightness.dark?Brightness.dark:Brightness.light);
           })
         ],*/
-        actions: <Widget>[
+        /*actions: <Widget>[
           IconButton(icon: Icon(Icons.search), onPressed: () {
             showSearch(context: context, delegate: DataSearch());
           })
-        ],
+        ],*/
         elevation: 0.0,
         centerTitle: true,
         iconTheme: new IconThemeData(),
@@ -136,7 +135,7 @@ class Contact extends StatelessWidget {
                               ),
                               Row(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
                                     Padding(
                                       padding: const EdgeInsets.fromLTRB(
@@ -176,75 +175,6 @@ class Contact extends StatelessWidget {
 }
 
 class DataSearch extends SearchDelegate<String> {
-  final List<String> state = [
-    "Andhra Pradesh",
-    "Arunachal Pradesh",
-    "Assam",
-    "Bihar",
-    "Chhattisgarh",
-    "Goa",
-    "Gujarat",
-    "Haryana",
-    "Himachal Pradesh",
-    "Jharkhand",
-    "Karnataka",
-    "Kerala",
-    "Madhya Pradesh",
-    "Maharashtra",
-    "Manipur",
-    "Meghalaya",
-    "Mizoram",
-    "Nagaland",
-    "Odisha",
-    "Punjab",
-    "Rajasthan",
-    "Sikkim",
-    "Tamil Nadu",
-    "Telangana",
-    "Tripura",
-    "Uttarakhand",
-    "Uttar Pradesh",
-    "West Bengal"
-  ];
-
-  final recentStates = [
-    "Delhi",
-    "Maharashtra",
-    "Uttar Pradesh",
-    "Haryana",
-    "Madhya Pradesh"
-  ];
-
-  List<int> number = [
-    08662410978,
-    9436055743,
-    6913347770,
-    104,
-    104,
-    104,
-    104,
-    8558893911,
-    104,
-    104,
-    104,
-    04712552056,
-    104,
-    02026127394,
-    3852411668,
-    108,
-    102,
-    7005539653,
-    9439994859,
-    104,
-    01412225624,
-    104,
-    04429510500,
-    104,
-    03812315879,
-    104,
-    18001805145,
-    1800313444222,
-  ];
 
   @override
   List<Widget> buildActions(BuildContext context) {
@@ -266,6 +196,9 @@ class DataSearch extends SearchDelegate<String> {
 
   @override
   Widget buildResults(BuildContext context) {
+    for (var i = 0; i < state.length; i++) {
+      maplist[state[i]] = number[i];
+    }
     return Padding(
       padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
       child: new Container(
@@ -321,7 +254,7 @@ class DataSearch extends SearchDelegate<String> {
                                     padding: const EdgeInsets.fromLTRB(
                                         12.0, 3.0, 6.0, 3.0),
                                     child: Text(
-                                      number[position].toString(),
+                                      maplist[this.query].toString(),
                                       style: TextStyle(fontSize: 16.0),
                                     ),
                                   ),
@@ -346,29 +279,37 @@ class DataSearch extends SearchDelegate<String> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    final suggestionList = query.isEmpty ? recentStates : state.where((p) =>
-        p.startsWith(query)).toList();
+    return null;
 
-    return ListView.builder(itemBuilder: (context, index) =>
+    /*for(var i=0;i<state.length;i++){
+      maplist[state[i]] = number[i];
+    }
+
+    print(maplist);
+
+    List recentStates = [
+      "Maharashtra",
+      "Uttar Pradesh",
+      "Haryana",
+      "Madhya Pradesh"
+    ];*/
+    //final suggestionList = query.isEmpty?recentStates:state.where((p)=>p.startsWith(query)).toList();
+
+    /*return ListView.builder(itemBuilder: (context, index) =>
         ListTile(
           onTap: () {
             showResults(context);
           },
           leading: Icon(Icons.location_city),
-          title: RichText(text: TextSpan(
-              text: suggestionList[index].substring(0, query.length),
-              style: TextStyle(
-                  color: Colors.black, fontWeight: FontWeight.bold),
-              children: [TextSpan(
-                  text: suggestionList[index].substring(query.length),
-                  style: TextStyle(color: Colors.grey)
-              )
-              ]
-          )),
+          title: RichText(
+              text: TextSpan(
+                text: suggestionList[index],
+                style: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.bold),
+              )),
         ),
         itemCount: suggestionList.length
-    );
+    );*/
   }
 
 }
-

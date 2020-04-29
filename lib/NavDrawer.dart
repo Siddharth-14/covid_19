@@ -1,11 +1,10 @@
+import 'package:covid19/contact.dart';
 import 'package:covid19/developer.dart';
 import 'package:covid19/donation.dart';
 import 'package:covid19/fact.dart';
 import 'package:covid19/guideline.dart';
 import 'package:covid19/main.dart';
 import 'package:flutter/material.dart';
-
-import 'contact.dart';
 
 
 class NavDrawer extends StatelessWidget {
@@ -43,7 +42,7 @@ class NavDrawer extends StatelessWidget {
             title: Text('Guidelines'),
             onTap: () =>
             {
-            Navigator.push(context,
+              Navigator.push(context,
                   new MaterialPageRoute(builder: (context) => new Guideline()))
             },
           ),
@@ -84,11 +83,11 @@ class NavDrawer extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets
-                .fromLTRB(0.0, 150.0, 0.0, 8.0),
+                .fromLTRB(0.0, 100.0, 0.0, 8.0),
             child: Align(
-            alignment: Alignment.bottomCenter,
-            child: Text('Developed by'),
-          ),
+              alignment: Alignment.bottomCenter,
+              child: Text('Developed by'),
+            ),
           ),
           Align(
             alignment: Alignment.bottomCenter,

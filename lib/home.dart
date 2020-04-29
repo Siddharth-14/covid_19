@@ -49,9 +49,9 @@ class HomePageState extends State<HomePage> {
                         ? Brightness.dark
                         : Brightness.light);
                   }),
-                  IconButton(icon: Icon(Icons.search), onPressed: () {
+                  /*IconButton(icon: Icon(Icons.search), onPressed: () {
                     showSearch(context: context, delegate: DataSearch());
-                  })
+                  })*/
                 ],
                 elevation: 0.0,
                 centerTitle: true,
@@ -447,7 +447,7 @@ class HomePageState extends State<HomePage> {
   }
 }
 
-class DataSearch extends SearchDelegate<String> {
+/*class DataSearch extends SearchDelegate<String> {
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
@@ -495,4 +495,4 @@ class DataSearch extends SearchDelegate<String> {
     );
   }
 
-}
+}*/

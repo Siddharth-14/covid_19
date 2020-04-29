@@ -46,7 +46,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
             padding: const EdgeInsets
                 .fromLTRB(8.0, 18.0, 0.0, 8.0),
             child: Text(
-              "Covid Care",
+              "COVID Care",
               style: TextStyle(
                   color: Color(0xFFE6505D),
                   fontSize: 18.0,

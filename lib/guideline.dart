@@ -241,6 +241,193 @@ class Guideline extends StatelessWidget {
                             ),
                           ),
                         ),
+                        new Container(
+                          child: Center(
+                            child: SizedBox(
+                              width: 200.0,
+                              height: 110.0,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 8.0),
+                                child: new Card(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10)),
+                                  elevation: 5,
+                                  color: Colors.yellow,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Colors.amber[900],
+                                              Colors.amber
+                                            ])),
+                                    child: Column(
+                                      children: <Widget>[
+                                        Column(
+                                          mainAxisAlignment: MainAxisAlignment
+                                              .spaceBetween,
+                                          children: <Widget>[
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment
+                                                  .start,
+                                              children: <Widget>[
+                                                Padding(
+                                                  padding: const EdgeInsets
+                                                      .fromLTRB(
+                                                      8.0, 18.0, 0.0, 8.0),
+                                                  child: Align(
+                                                    alignment: Alignment
+                                                        .centerLeft,
+                                                    child: Text(
+                                                      "Repeated Shaking \nWith Chills",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 18.0,
+                                                          fontWeight: FontWeight
+                                                              .bold,
+                                                          fontFamily: 'Poppins'),
+                                                    ),
+                                                  ),
+                                                ),
+
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        new Container(
+                          child: Center(
+                            child: SizedBox(
+                              width: 200.0,
+                              height: 110.0,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 8.0),
+                                child: new Card(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10)),
+                                  elevation: 5,
+                                  color: Colors.red,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Colors.red[900],
+                                              Colors.red
+                                            ])),
+                                    child: Column(
+                                      children: <Widget>[
+                                        Column(
+                                          mainAxisAlignment: MainAxisAlignment
+                                              .spaceBetween,
+                                          children: <Widget>[
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment
+                                                  .start,
+                                              children: <Widget>[
+                                                Padding(
+                                                  padding: const EdgeInsets
+                                                      .fromLTRB(
+                                                      8.0, 18.0, 0.0, 8.0),
+                                                  child: Align(
+                                                    alignment: Alignment
+                                                        .centerLeft,
+                                                    child: Text(
+                                                      "Headache Or \n Muscle Pain",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 18.0,
+                                                          fontWeight: FontWeight
+                                                              .bold,
+                                                          fontFamily: 'Poppins'),
+                                                    ),
+                                                  ),
+                                                ),
+
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        new Container(
+                          child: SizedBox(
+                            width: 200.0,
+                            height: 110.0,
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 8.0),
+                              child: new Card(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10)),
+                                elevation: 5,
+                                color: Colors.green,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      gradient: LinearGradient(
+                                          begin: Alignment.topRight,
+                                          end: Alignment.bottomLeft,
+                                          colors: [
+                                            Colors.green[900],
+                                            Colors.green
+                                          ])),
+                                  child: Column(
+                                    children: <Widget>[
+                                      Column(
+                                        mainAxisAlignment: MainAxisAlignment
+                                            .spaceBetween,
+                                        children: <Widget>[
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment
+                                                .start,
+                                            children: <Widget>[
+                                              Padding(
+                                                padding: const EdgeInsets
+                                                    .fromLTRB(
+                                                    8.0, 18.0, 0.0, 8.0),
+                                                child: Align(
+                                                  alignment: Alignment
+                                                      .centerLeft,
+                                                  child: Text(
+                                                    "New Loss Of \nTaste Or Smell",
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 18.0,
+                                                        fontWeight: FontWeight
+                                                            .bold,
+                                                        fontFamily: 'Poppins'),
+                                                  ),
+                                                ),
+                                              ),
+
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
                       ]),
                     ),
                   ],
