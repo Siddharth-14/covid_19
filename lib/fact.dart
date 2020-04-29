@@ -91,7 +91,7 @@ class Fact extends StatelessWidget {
                                           "Catching the new coronavirus DOES NOT mean you'll have it for life.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -144,7 +144,7 @@ class Fact extends StatelessWidget {
                                           "Cold weather and snow CANNOT kill the CoronaVirus.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -197,7 +197,7 @@ class Fact extends StatelessWidget {
                                           "Coronavirus CAN be transmitted in areas with hot and humid climates.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -250,7 +250,7 @@ class Fact extends StatelessWidget {
                                           "Hand dryers are NOT effective in killing the coronavirus.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -303,7 +303,7 @@ class Fact extends StatelessWidget {
                                           "UV light SHOULD NOT be used for sterilization and can cause skin irritation.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -356,7 +356,7 @@ class Fact extends StatelessWidget {
                                           "Taking a hot bath DOES NOT prevent the coronavirus.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -409,7 +409,7 @@ class Fact extends StatelessWidget {
                                           "There's NO evidence that pets like dogs or cats can transmit it.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -462,7 +462,7 @@ class Fact extends StatelessWidget {
                                           "Antibiotics DO NOT work against viruses, only bacteria.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -515,7 +515,7 @@ class Fact extends StatelessWidget {
                                           "Spraying alcohol or chlorine on your body WILL NOT kill already entered viruses.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -568,7 +568,7 @@ class Fact extends StatelessWidget {
                                           "Thermal scanners CANNOT detect the coronavirus.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -621,7 +621,7 @@ class Fact extends StatelessWidget {
                                           "There's NO medicine recommended to prevent/treat CoronaVirus.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),
@@ -674,7 +674,7 @@ class Fact extends StatelessWidget {
                                           "It CANNOT be transmitted through mosquito bites.",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                               //fontWeight: FontWeight.bold,
                                               fontFamily: 'Poppins'),
                                         ),

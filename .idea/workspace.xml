@@ -5,19 +5,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="Implemented">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/NavDrawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NavDrawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/contact.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contact.dart" afterDir="false" />
+    <list default="true" id="1d312438-e0da-4105-b976-e06332b117ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/lib/fact.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fact.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/guideline.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/guideline.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/splashscreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/splashscreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587928001811</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updated Contacts">
+      <created>1588144196065</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588144196065</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -205,7 +201,8 @@
     <MESSAGE value="Added Donations and Updated Developers and NavDrawer" />
     <MESSAGE value="Updated Donations" />
     <MESSAGE value="Added Theme, MythBusters, Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Theme, MythBusters, Search" />
+    <MESSAGE value="Updated Contacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Contacts" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -225,7 +222,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/guideline.dart</url>
-          <line>457</line>
+          <line>459</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
