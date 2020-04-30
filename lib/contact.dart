@@ -158,10 +158,10 @@ class Contact extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Divider(
+                      /*Divider(
                         height: 2.0,
                         color: Colors.grey,
-                      )
+                      )*/
                     ],
                   ),
                 ),
@@ -263,10 +263,10 @@ class DataSearch extends SearchDelegate<String> {
                         ),
                       ],
                     ),
-                    Divider(
+                    /*Divider(
                       height: 2.0,
                       color: Colors.grey,
-                    )
+                    )*/
                   ],
                 ),
               ),

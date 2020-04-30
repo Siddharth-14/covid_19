@@ -428,10 +428,10 @@ class HomePageState extends State<HomePage> {
                                     ),
                                   ],
                                 ),
-                                Divider(
+                                /*Divider(
                                   height: 2.0,
                                   color: Colors.grey,
-                                )
+                                )*/
                               ],
                             ),
                           );

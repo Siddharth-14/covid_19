@@ -81,7 +81,7 @@ class NavDrawer extends StatelessWidget {
                   new MaterialPageRoute(builder: (context) => new Developer()))
             },
           ),
-          Padding(
+          /*Padding(
             padding: const EdgeInsets
                 .fromLTRB(0.0, 100.0, 0.0, 8.0),
             child: Align(
@@ -92,7 +92,7 @@ class NavDrawer extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Text('IEEE CS-VIT'),
-          ),
+          ),*/
         ],
       ),
     );

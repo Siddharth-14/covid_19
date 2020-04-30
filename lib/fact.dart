@@ -46,13 +46,13 @@ class Fact extends StatelessWidget {
           ),
           Flexible(
             flex: 5,
-            //child: SingleChildScrollView(
-            //scrollDirection: Axis.vertical,
-            //physics: BouncingScrollPhysics(),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              physics: BouncingScrollPhysics(),
             child: //Row(children: <Widget>[
                 // Column(
             // children: <Widget>[]
-            GridView.count(crossAxisCount: 2, children: <Widget>[
+            Column(children: <Widget>[
               //]),
               //]),
               new Container(
@@ -86,7 +86,7 @@ class Fact extends StatelessWidget {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 16.0, 12.0, 16.0),
+                                            12.0, 24.0, 12.0, 24.0),
                                         child: Text(
                                           "Catching the new coronavirus DOES NOT mean you'll have it for life.",
                                           style: TextStyle(
@@ -192,7 +192,7 @@ class Fact extends StatelessWidget {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 16.0, 12.0, 16.0),
+                                            12.0, 24.0, 12.0, 24.0),
                                         child: Text(
                                           "Coronavirus CAN be transmitted in areas with hot and humid climates.",
                                           style: TextStyle(
@@ -298,7 +298,7 @@ class Fact extends StatelessWidget {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 16.0, 12.0, 16.0),
+                                            12.0, 24.0, 12.0, 24.0),
                                         child: Text(
                                           "UV light SHOULD NOT be used for sterilization and can cause skin irritation.",
                                           style: TextStyle(
@@ -404,7 +404,7 @@ class Fact extends StatelessWidget {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 16.0, 12.0, 16.0),
+                                            12.0, 24.0, 12.0, 24.0),
                                         child: Text(
                                           "There's NO evidence that pets like dogs or cats can transmit it.",
                                           style: TextStyle(
@@ -510,7 +510,7 @@ class Fact extends StatelessWidget {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 16.0, 12.0, 16.0),
+                                            12.0, 24.0, 12.0, 24.0),
                                         child: Text(
                                           "Spraying alcohol or chlorine on your body WILL NOT kill already entered viruses.",
                                           style: TextStyle(
@@ -563,7 +563,7 @@ class Fact extends StatelessWidget {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 24.0, 12.0, 24.0),
+                                            12.0, 16.0, 12.0, 16.0),
                                         child: Text(
                                           "Thermal scanners CANNOT detect the coronavirus.",
                                           style: TextStyle(
@@ -616,7 +616,7 @@ class Fact extends StatelessWidget {
                                     children: <Widget>[
                                       Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            12.0, 16.0, 12.0, 16.0),
+                                            12.0, 24.0, 12.0, 24.0),
                                         child: Text(
                                           "There's NO medicine recommended to prevent/treat CoronaVirus.",
                                           style: TextStyle(
@@ -692,7 +692,7 @@ class Fact extends StatelessWidget {
                 ),
               ),
             ]),
-            // ),
+            ),
           ),
         ]),
       ),
